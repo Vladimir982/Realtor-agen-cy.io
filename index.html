@@ -10,36 +10,48 @@
 </head>
 
 <body>
+    <!---------------------------------------------- The main container ------------------------------------------------>
     <div class="wrapper">
+        <!---------------------------------------------- header ------------------------------------------------>
         <header class="header">
             <div class="header__container _container">
-                <div class="header__logo">
-                    <img src="./image/Логотип в шапке.png" alt="">
-                </div>
-                <div class="header__burger popup__area">
-                <span></span>
+                <a href="index.html" class="header__logo">
+                    <img src="./image/Логотип в шапке.png" alt="logo">
+                </a>
+                <div class="header__burger">
+                    <span></span>
                 </div>
                 <div class="header__popup">
-                    <nav class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Про місто</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Про нас</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#popup" id="popup__item" class="menu__link">Центр продажу</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакти</a> 
-                            </li>
-                        </ul>
-                    </nav>
+                    <a href="#" class="area__popups"></a>
+                    <div class="header-popup__body">
+                        <div class="header-popup__background">
+                            <div class="header-popup__content">
+                                <nav class="header__menu menu">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Про місто</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="about_us.html" class="menu__link">Про нас</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#popup" id="popup__item" class="menu__link">Центр продажу</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Контакти</a> 
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </header>
+        <!---------------------------------------------- main ------------------------------------------------>
         <main class="page">
+        <!-------------------------------------- page__main-block ------------------------------------------------>
             <div class="page__main-block main-block">
               <div class="main-block__container _container">
                   <div class="main-block__body">
@@ -48,7 +60,7 @@
                         Шукайте квартиру? Тоді вам точно до нас! Підберемо, допоможемо та поселимо.
                      </div>
                      <div class="main-block__buttons">
-                        <a href="#" class="main-block__button">Вибрати квартиру</a>
+                        <a href="list_apartment.html" class="main-block__button">Вибрати квартиру</a>
                      </div>
                 </div>
               </div> 
@@ -56,6 +68,7 @@
                   <img src="./image/image 1.jpg" alt="cover">
               </div> 
             </div>
+        <!---------------------------------------------- page__block-apartments ------------------------------------------------>
             <div class="page__block-apartments block-apartment">
                     <div class="block-apartment__block">
                         <div class="block-apartment__item left__text">
@@ -89,8 +102,8 @@
                         </div>
                         <img src="./image/Картинка студия.png" alt="">
                     </div>
-                
             </div>
+        <!---------------------------------------------- page__block-why-us ------------------------------------------------>    
             <div class="page__block-why-us why-us">
                 <div class="why-us__container _container">
                     <div class="why-us__title">
@@ -133,7 +146,8 @@
                     </div>
                 </div>
             </div>
-            <div class="page__block-location location">
+        <!---------------------------------------------- page__block-location ------------------------------------------------>
+            <div class=" location">
                 <div class="location__container _container">
                     <div class="location__title">
                         <h2>
@@ -149,8 +163,8 @@
                         </p>
                     </div>
                 </div>
-                
             </div>
+        <!---------------------------------------------- page__block-consultation ------------------------------------------------>
             <div class="page__block-consultation consultation">
                 <div class="consultation__container _container">
                     <!--<form action="#" method="post" enctype="multipart/form-data">-->
@@ -180,6 +194,7 @@
                 </div>
             </div>
         </main>
+        <!---------------------------------------------- footer ------------------------------------------------>
         <footer class="footer">
             <div class="footer__container _container">
                 <div class="footer__social-networks social-networks">
@@ -231,36 +246,36 @@
                 </div>
             </div>
         </footer>
-        <div id="popup" class="popup-menu">
-            <a href="#" class="popup-menu__area"></a>
-            <div class="popup-menu__body">
-                <div class="popup-menu__content">
-                    <a href="#" class="close__popup">x</a>
-                    <!-- <form action=""> -->
+        <!---------------------------------------------- popup header-consultation ------------------------------------------------>
+        <div id="popup" class="popup-consultation">
+            <a href="#" class="popup-consultation__area"></a>
+            <div class="popup-consultation__body">
+                <div class="popup-consultation__content">
+                    <div class="popup__close area__popups"></div>
                         <div class="consultation__container _container consultation-background">
                             <!--<form action="#" method="post" enctype="multipart/form-data">-->
-                            <div class="consultation-body consultation-padding">
-                                <div class="consultation__discription discription">
-                                    <div class="discription__title">
+                            <div class="consultation-body-popup consultation-padding">
+                                <div class="consultation__discription-popup discription">
+                                    <div class="discription-popup__title">
                                         <h3>
                                             Отримайте детальну консультацію
                                         </h3>
                                     </div>
-                                    <div class="discription__subtitle">
+                                    <div class="discription-popup__subtitle">
                                         <p>
                                             Заповніть анкету, щоб отримати детальну відповідь на ваші запитання та попередню вартість.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="consultation__user-information user-information">
-                                    <input class="user-information__item" type="text" placeholder="Ваше ім'я">
-                                    <input class="user-information__item" type="text" placeholder="Бажана площа Вашої квартири">
-                                    <input class="user-information__item" type="text" placeholder="Однокімнатна або двокімнатна квартира">
-                                    <input class="user-information__item" type="text" placeholder="Номер телефону">
+                                <div class="consultation-popup__user-information user-information">
+                                    <input class="user-information-popup__item" type="text" placeholder="Ваше ім'я">
+                                    <input class="user-information-popup__item" type="text" placeholder="Бажана площа Вашої квартири">
+                                    <input class="user-information-popup__item" type="text" placeholder="Однокімнатна або двокімнатна квартира">
+                                    <input class="user-information-popup__item" type="text" placeholder="Номер телефону">
                                 </div>
                             </div>
-                            <div class="consultation__block-btn consultation-btn__margin">
-                                <button class="consultation__btn" type="submit">Відправити</button>
+                            <div class="consultation-popup__block-btn">
+                                <button class="consultation-popup__btn" type="submit">Відправити</button>
                             </div>
                         </div>
                     <!-- </form> -->
